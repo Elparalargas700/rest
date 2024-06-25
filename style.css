@@ -1,0 +1,76 @@
+body{
+    background-image: url(fondo-restaurant.jpg);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aqua;
+}
+
+@media screen and (max-width:1000px){
+    nav{
+        flex-direction: column;
+        height: 190px;
+        justify-content: space-evenly;
+}
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aqua;
+}
+

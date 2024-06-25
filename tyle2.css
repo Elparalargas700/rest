@@ -1,0 +1,149 @@
+/* Estilos base que se aplican a todos los tamaños de pantalla */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue, Helvetica;
+    color: white;
+    background-color: #323232;
+}
+
+.swiper {
+    width: 100%;
+    padding: 150px 0 50px 0;
+}
+
+.swiper-slide {
+    width: 300px;
+    height: 500px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #FFB900;
+}
+
+.icons img {
+    width: 120px;
+}
+
+.product-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-txt {
+    flex-basis: 50%;
+}
+
+.product-txt span {
+    font-size: 25px;
+    color: #FFB900;
+    font-weight: bold;
+}
+
+.product-txt h3 {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.product-txt p {
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+.product-img {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.product-img img {
+    width: 120px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 55px;
+    border: 1px solid #FFB900;
+    border-radius: 25px;
+    color: #FFB900;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+/* Media queries para ajustes en pantallas menores a 800px */
+
+@media screen and (max-width: 800px) {
+    nav {
+        padding: 20px 5%;
+    }
+    
+    ul li {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .swiper-slide {
+        width: 250px;
+        height: 450px;
+        padding: 25px;
+    }
+
+    .product-img img {
+        width: 111px;
+        margin-top: 10px; /* Añadido margen superior para separación */
+    }
+
+    a {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,146 @@
+/* Estilos base que se aplican a todos los tamaños de pantalla */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    font-weight: 400; /* Cambiado a 400 según tu especificación */
+    font-family: "Kaushan Script", cursive;
+    font-style: normal;
+}
+
+h1 {
+    color: white;
+    font-size: 36px; /* Reducido el tamaño de la fuente para pantallas más pequeñas */
+    margin: 0; /* Eliminado el margen superior que podría añadir un espacio innecesario en dispositivos móviles */
+}
+
+ul li {
+    display: block; /* Cambiado a block para que los elementos de la lista se muestren en una columna */
+    padding: 10px 0; /* Ajustado el padding para espaciar los elementos en pantallas pequeñas */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue, Helvetica;
+    color: white;
+    background-color: #323232;
+}
+
+.swiper {
+    width: 100%;
+    padding: 150px 0 50px 0;
+}
+
+.swiper-slide {
+    width: 250px; /* Reducido el ancho para adaptarse mejor a pantallas pequeñas */
+    height: 450px; /* Reducido la altura para adaptarse mejor a pantallas pequeñas */
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Reducido el margen inferior para dispositivos móviles */
+}
+
+.icons i {
+    font-size: 18px; /* Reducido el tamaño del ícono para dispositivos móviles */
+    color: #FFB900;
+}
+
+.icons img {
+    width: 80px; /* Reducido el tamaño de la imagen para dispositivos móviles */
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para una mejor disposición en dispositivos móviles */
+    align-items: center; /* Centrado de contenido */
+}
+
+.product-txt {
+    margin-bottom: 20px; /* Reducido el margen inferior para dispositivos móviles */
+    text-align: center; /* Centrado de texto */
+}
+
+.product-txt span {
+    font-size: 20px; /* Reducido el tamaño del texto para dispositivos móviles */
+    color: #FFB900;
+    font-weight: bold;
+}
+
+.product-txt h3 {
+    font-size: 18px; /* Reducido el tamaño del título para dispositivos móviles */
+    color: white;
+    text-transform: uppercase;
+}
+
+.product-txt p {
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+.product-img {
+    margin-top: 20px; /* Añadido margen superior para separación */
+    text-align: center; /* Centrado de imagen */
+}
+
+.product-img img {
+    width: 100px; /* Reducido el tamaño de la imagen para dispositivos móviles */
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 40px; /* Reducido el padding del botón para dispositivos móviles */
+    border: 1px solid #FFB900;
+    border-radius: 25px;
+    color: #FFB900;
+    text-decoration: none;
+    margin-top: 30px; /* Reducido el margen superior para dispositivos móviles */
+}
+
+/* Media queries para ajustes adicionales en pantallas menores a 800px */
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 30px; /* Reducido el tamaño de la fuente del título para dispositivos móviles */
+    }
+
+    .swiper-slide {
+        width: 200px; /* Ajustado el ancho del swiper slide para pantallas muy pequeñas */
+        height: 400px; /* Ajustado la altura del swiper slide para pantallas muy pequeñas */
+        padding: 20px; /* Reducido el padding para pantallas muy pequeñas */
+    }
+
+    .icons i {
+        font-size: 16px; /* Reducido aún más el tamaño del ícono para pantallas muy pequeñas */
+    }
+
+    .icons img {
+        width: 60px; /* Reducido aún más el tamaño de la imagen para pantallas muy pequeñas */
+    }
+
+    .btn-1 {
+        padding: 8px 30px; /* Reducido aún más el padding del botón para pantallas muy pequeñas */
+        margin-top: 20px; /* Reducido el margen superior del botón para pantallas muy pequeñas */
+    }
+}
